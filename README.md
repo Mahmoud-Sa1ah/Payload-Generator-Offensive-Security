@@ -32,12 +32,12 @@ A modular, Python-based payload generation tool designed to automate the creatio
 
 ```bash
 pip install -r requirements.txt
-Run the tool using:
+```
 
-bash
-Copy
-Edit
+Run the tool using:
+```bash
 python main.py --xss --sqli --cmd --encode=url --clipboard --output=json
+```
 📁 Payload Sources
 Payload templates are stored in the payloads/ directory:
 
@@ -48,9 +48,7 @@ sqli.txt → SQL injection strings
 cmd_injection.txt → Command injection commands
 
 💡 Example Output
-json
-Copy
-Edit
+```json
 {
   "type": "xss",
   "raw": "<svg/onload=alert(1)>",
@@ -58,3 +56,4 @@ Edit
     "url": "%3Csvg%2Fonload%3Dalert%281%29%3E"
   }
 }
+```
